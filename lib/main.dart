@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_delivery_app/app/modules/login/auth/view/login_page.dart';
+import 'package:pizza_delivery_app/app/modules/splash/splash_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +15,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      initialRoute: SplashPage.router,
+      routes: {
+        SplashPage.router: (_) => SplashPage(),
+        LoginPage.router: (_) => LoginPage()
+      },
     );
   }
 }
