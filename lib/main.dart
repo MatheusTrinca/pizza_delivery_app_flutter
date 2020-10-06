@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_delivery_app/app/modules/home/view/home_page.dart';
 import 'package:pizza_delivery_app/app/modules/login/auth/view/login_page.dart';
 import 'package:pizza_delivery_app/app/modules/splash/splash_page.dart';
 
@@ -18,8 +19,11 @@ class MyApp extends StatelessWidget {
       initialRoute: SplashPage.router,
       routes: {
         SplashPage.router: (_) => SplashPage(),
-        LoginPage.router: (_) => LoginPage()
+        LoginPage.router: (_) => LoginPage(),
+        HomePage.router: (_) => HomePage()
       },
     );
   }
 }
+
+

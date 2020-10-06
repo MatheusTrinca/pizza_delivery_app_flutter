@@ -137,5 +137,3 @@ class _LoginContentState extends State<LoginContent> with LoaderMixin, MessagesM
     );
   }
 }
-
-// TODO: 1:44:00 -> Bug do Rahman e bug aqui nao saindo do circular
