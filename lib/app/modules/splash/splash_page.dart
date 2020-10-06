@@ -27,7 +27,7 @@ class _SplashContentState extends State<SplashContent> {
   void initState() {
     super.initState();
     Future.delayed(Duration.zero, () => Navigator.of(context)
-        .pushNamedAndRemoveUntil(LoginPage.router, (route) => false));
+      .pushNamedAndRemoveUntil(LoginPage.router, (route) => false));
   }
 
   @override
